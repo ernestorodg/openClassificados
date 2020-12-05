@@ -1,0 +1,37 @@
+{
+  "name": "openclassificados",
+  "version": "1.0.0",
+  "description": "A proposta é ir construindo uma aplicação web de classificados a medida que vou estudando desenvolvimento Web.",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "dev": "ts-node-dev src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ernestorodg/openClassificados.git"
+  },
+  "keywords": [
+    "classificados"
+  ],
+  "author": "Ernesto Rodríguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ernestorodg/openClassificados/issues"
+  },
+  "homepage": "https://github.com/ernestorodg/openClassificados#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.5",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.3"
+  }
+}
